@@ -1,0 +1,9 @@
+{
+    "TOKEN": "OTQyNjQ0NTkwMTIzNTY1MDY3.YgngLw.6g-BrYo1_Bqa9EiPEyLPZpFegtM",
+    "welcome_channel": "944243347646738482",
+    "leave_channel" : "944252030116069456",
+    "pic": ["C:\\Users\\User\\discord_bot_repo\\wh.jpg", "C:\\Users\\User\\discord_bot_repo\\300.gif"],
+    "web_pic": ["https://pbs.twimg.com/media/FL0A_QjVgAAs7gG?format=jpg&name=4096x4096",
+        "https://iacgg.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/h/e/header_2.jpg"],
+    "keyword": "['test1', 'test2', 'test3']"
+}
