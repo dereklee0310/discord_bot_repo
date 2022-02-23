@@ -4,7 +4,7 @@ from discord.ext import commands
 from core.classes import Cog_Extension
 import datetime
 
-class Main(commands.Cog):
+class Main(Cog_Extension):
 
     @commands.command()
     async def ping(self, ctx):

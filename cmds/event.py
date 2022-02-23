@@ -16,7 +16,7 @@ class Event(Cog_Extension):
 
     @commands.Cog.listener()
     async def on_member_remove(self, member):
-        channel = self.bot.get_channel((jdata['leave_channel']))
+        channel = self.bot.get_channel(int(jdata['leave_channel']))
         await channel.send(f'{member} has leaved!')
     
     @commands.Cog.listener()
