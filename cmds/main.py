@@ -1,3 +1,11 @@
+'''
+Author: dereklee0310 dereklee0310.gmail.com
+Date: 2022-02-20 14:27:58
+LastEditors: dereklee0310 dereklee0310.gmail.com
+LastEditTime: 2022-06-25 02:32:53
+FilePath: \discord_bot_repo\cmds\main.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE   
+'''
 from sqlite3 import Timestamp
 import discord
 from discord.ext import commands
@@ -6,6 +14,7 @@ import datetime
 
 class Main(Cog_Extension):
 
+    # return the latency of bot
     @commands.command()
     async def ping(self, ctx):
         await ctx.send(f'{round(self.bot.latency*1000)}ms')
@@ -33,4 +42,4 @@ class Main(Cog_Extension):
         await ctx.channel.purge(limit=num+1)
 
 def setup(bot):
-    bot.add_cog(Main(bot))
+    bot.add_cog(Main(bot)) # execute this line first to set up

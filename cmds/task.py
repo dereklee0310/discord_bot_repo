@@ -45,4 +45,4 @@ class Task(Cog_Extension):
             json.dump(jdata, jfile, indent=4)
 
 def setup(bot):
-    bot.add_cog(Task(bot))
+    bot.add_cog(Task(bot)) # execute this line first to set up

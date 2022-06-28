@@ -1,3 +1,11 @@
+'''
+Author: dereklee0310 dereklee0310.gmail.com
+Date: 2022-02-14 22:27:13
+LastEditors: dereklee0310 dereklee0310.gmail.com
+LastEditTime: 2022-06-25 02:32:47
+FilePath: \discord_bot_repo\test.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 import discord
 import time
 import asyncio
