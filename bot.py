@@ -2,7 +2,7 @@
 Author: dereklee0310 dereklee0310.gmail.com
 Date: 2022-02-18 22:07:14
 LastEditors: dereklee0310 dereklee0310.gmail.com
-LastEditTime: 2022-07-12 01:45:41
+LastEditTime: 2022-07-12 02:07:30
 FilePath: \discord_bot_repo\bot.py
 '''
 import discord
@@ -11,6 +11,7 @@ import json
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+import sys
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
