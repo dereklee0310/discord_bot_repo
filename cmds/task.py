@@ -1,3 +1,13 @@
+'''
+Author: dereklee0310 dereklee0310.gmail.com
+Date: 2022-02-20 17:50:33
+LastEditors: dereklee0310 dereklee0310.gmail.com
+LastEditTime: 2022-07-11 19:05:20
+FilePath: \discord_bot_repo\cmds\task.py
+Description: 
+
+Copyright (c) 2022 by dereklee0310 dereklee0310.gmail.com, All Rights Reserved. 
+'''
 import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
@@ -18,12 +28,10 @@ class Task(Cog_Extension):
                 # await self.channel.send("running rn!")
                 # await asyncio.sleep(5)
                 now_time = datetime.datetime.now().strftime('%H%M')
-                with open ('setting.json', 'r', encoding='utf8') as jfile:
-                    jdata = json.load(jfile)
                 if now_time == jdata['time'] and self.counter == 0:
                     await self.channel.send('task is working')
                     self.counter = 1
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(1) # lend bot some time to get ready
                 else:
                     await asyncio.sleep(1)
                     pass
@@ -37,7 +45,7 @@ class Task(Cog_Extension):
 
     @commands.command()
     async def set_time(self, ctx, time):
-        self.counter = 0
+        self.counter = 0 #reset counter
         with open ('setting.json', 'r', encoding='utf8') as jfile:
             jdata = json.load(jfile)
         jdata['time'] = time
