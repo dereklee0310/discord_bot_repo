@@ -6,9 +6,6 @@ LastEditTime: 2022-07-11 19:07:39
 FilePath: \discord_bot_repo\cmds\main.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE   
 '''
-from itertools import count
-from sqlite3 import Timestamp
-from time import struct_time
 import discord
 from discord.ext import commands
 from core.classes import Cog_Extension

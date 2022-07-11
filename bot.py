@@ -2,15 +2,12 @@
 Author: dereklee0310 dereklee0310.gmail.com
 Date: 2022-02-18 22:07:14
 LastEditors: dereklee0310 dereklee0310.gmail.com
-LastEditTime: 2022-07-04 22:33:23
+LastEditTime: 2022-07-11 19:57:25
 FilePath: \discord_bot_repo\bot.py
 '''
-from distutils import extension
-from msilib.schema import File
 import discord
 from discord.ext import commands # https://discordpy.readthedocs.io/en/stable/ext/commands/index.html
 import json
-import random
 import os
 
 #todo handle the default help command that can't be used in text channel in voice channel
