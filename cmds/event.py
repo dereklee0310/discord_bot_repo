@@ -19,8 +19,8 @@ from pathlib import Path
 with open ('setting.json', 'r', encoding='utf8') as jfile:
     jdata = json.load(jfile)
 
-# sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.append(jdata['func_lib']) 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(jdata['func_lib'])
 # # from func import is_text_channel
 import func
 class Event(Cog_Extension): # inheritance
