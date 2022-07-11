@@ -2,7 +2,7 @@
 Author: dereklee0310 dereklee0310.gmail.com
 Date: 2022-02-20 14:27:58
 LastEditors: dereklee0310 dereklee0310.gmail.com
-LastEditTime: 2022-07-11 19:07:39
+LastEditTime: 2022-07-11 22:59:07
 FilePath: \discord_bot_repo\cmds\main.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE   
 '''
@@ -106,6 +106,7 @@ class Main(Cog_Extension):
 
     @commands.command()
     async def forecast(self, ctx, org_county): #todo use reply!
+        """weather forecast""" # comment
         import json
         with open ('setting.json', 'r', encoding='utf8') as jfile: # open setting.json, and use jfile as the instance
             jdata = json.load(jfile)
@@ -238,9 +239,6 @@ class Main(Cog_Extension):
     async def t(self, ctx):
         self.bot.reload_extension(f'cmds.main') #! just for test
         await ctx.invoke(self.bot.get_command('forecast'), org_county="高雄市")
-    @commands.command()
-    async def t1(self, ctx):
-        await ctx.reply('123')
-
+        
 def setup(bot):
     bot.add_cog(Main(bot)) # execute this line first to set up

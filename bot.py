@@ -2,19 +2,21 @@
 Author: dereklee0310 dereklee0310.gmail.com
 Date: 2022-02-18 22:07:14
 LastEditors: dereklee0310 dereklee0310.gmail.com
-LastEditTime: 2022-07-11 19:57:25
+LastEditTime: 2022-07-11 22:56:20
 FilePath: \discord_bot_repo\bot.py
 '''
 import discord
 from discord.ext import commands # https://discordpy.readthedocs.io/en/stable/ext/commands/index.html
 import json
 import os
+from dotenv import load_dotenv
+from pathlib import Path
 
 #todo handle the default help command that can't be used in text channel in voice channel
 
 #todo handle exception: discord.ext.commands.errors.CommandNotFound: Command "piyan" is not found
 
-with open ('setting.json', 'r', encoding='utf8') as jfile: # open setting.json, and use jfile as the instance
+with open (Path('./setting.json'), 'r', encoding='utf8') as jfile: # open setting.json, and use jfile as the instance
     jdata = json.load(jfile)
 
 intents = discord.Intents.default()
@@ -96,4 +98,6 @@ async def reload(ctx, *args):
             await ctx.send(f'{arg} was reloaded successfully.')
 
 if __name__ == "__main__":
-    bot.run(jdata['TOKEN']) # start the bot
+    # bot.run(jdata['TOKEN']) # start the bot
+    load_dotenv()
+    bot.run(os.getenv("DISCORD_TOKEN"))
