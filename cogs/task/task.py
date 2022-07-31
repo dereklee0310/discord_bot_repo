@@ -8,8 +8,8 @@ Description:
 
 Copyright (c) 2022 by dereklee0310 dereklee0310.gmail.com, All Rights Reserved. 
 '''
-import discord
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 from core.classes import Cog_Extension
 import json, asyncio, datetime
 
@@ -40,11 +40,13 @@ class Task(Cog_Extension):
 
     @commands.command()
     async def set_channel(self, ctx, ch: int):
+        """set text channel for alarm (experimental)"""
         self.channel = self.bot.get_channel(ch)
         await ctx.send(f'set channel: {self.channel.mention}')
 
     @commands.command()
     async def set_time(self, ctx, time):
+        """set time for alarm (experimental)"""
         self.counter = 0 #reset counter
         with open ('setting.json', 'r', encoding='utf8') as jfile:
             jdata = json.load(jfile)

@@ -1,22 +1,8 @@
 {
     "welcome_channel": "944243347646738482",
     "leave_channel": "944252030116069456",
-    "pic": [
-        "./wh.jpg",
-        "./300.gif"
-    ],
-    "web_pic": [
-        "https://pbs.twimg.com/media/FL0A_QjVgAAs7gG?format=jpg&name=4096x4096",
-        "https://iacgg.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/h/e/header_2.jpg"
-    ],
     "piyan_meme_dir": "./static/piyan",
-    "keyword": [
-        "keyword1",
-        "keyword2",
-        "keyword3"
-    ],
     "bg_channel": "945364259024551957",
-    "bot_icon": "./static/bot_profile/mrdestructoid.png",
     "func_lib": "./lib",
     "time": "1907",
     "county": [
@@ -44,5 +30,13 @@
         "\u9023\u6c5f\u7e23"
     ],
     "rick_roll": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "county_icon_dir": "./static/county_icon"
+    "county_icon_dir": "./static/county_icon",
+    "bot_info": {
+        "bot_icon": "./static/bot_profile/mrdestructoid.png"
+    },
+    "error_table": {
+        "InvalidCountyError": "Invalid County Name",
+        "MissingRequiredArgument": "Missing Required Argument"
+    },
+    "nasa_thumbnail": "./static/nasa_thumbnail.png"
 }

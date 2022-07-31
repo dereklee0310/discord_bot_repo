@@ -2,27 +2,7 @@
 Author: dereklee0310 dereklee0310.gmail.com
 Date: 2022-07-02 16:25:49
 LastEditors: dereklee0310 dereklee0310.gmail.com
-LastEditTime: 2022-07-04 23:24:12
-FilePath: \discord_bot_repo\api_test\api_test.py
-Description: 
-
-Copyright (c) 2022 by dereklee0310 dereklee0310.gmail.com, All Rights Reserved. 
-'''
-'''
-Author: dereklee0310 dereklee0310.gmail.com
-Date: 2022-07-02 16:25:49
-LastEditors: dereklee0310 dereklee0310.gmail.com
-LastEditTime: 2022-07-03 00:44:29
-FilePath: \discord_bot_repo\api_test\api_test.py
-Description: 
-
-Copyright (c) 2022 by dereklee0310 dereklee0310.gmail.com, All Rights Reserved. 
-'''
-'''
-Author: dereklee0310 dereklee0310.gmail.com
-Date: 2022-07-02 16:25:49
-LastEditors: dereklee0310 dereklee0310.gmail.com
-LastEditTime: 2022-07-03 00:15:52
+LastEditTime: 2022-07-21 17:49:48
 FilePath: \discord_bot_repo\api_test\api_test.py
 Description: 
 
