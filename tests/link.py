@@ -42,4 +42,4 @@ async def google(ctx, *, query: str):
     await ctx.send(f"Google Result for: `{query}`", view=Google(query))
 
 
-bot.run("OTQyNjQ0NTkwMTIzNTY1MDY3.YgngLw.K9gyVKzQOfJAgmODRk3Qy9pcmOs")
+# bot.run() #! key
